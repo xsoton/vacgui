@@ -1,0 +1,24 @@
+=== data ===
+
+vac{}
+	info{}
+		date QDateTine
+		sample QString
+		state enum.IntEnum @enum.unique
+		comment QString
+	curves[]
+		parameters{}
+			channal int
+			start double
+			stop double
+			step double
+			delay double
+		data[]
+			point{}
+				index int
+				time double
+				V1 double
+				I1 double
+				V2 double
+				I2 double
+
